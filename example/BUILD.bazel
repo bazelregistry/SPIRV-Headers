@@ -1,0 +1,11 @@
+cc_library(
+  name = "example",
+  srcs = ["example.cpp"],
+  deps = ["//:spirv-headers"],
+)
+
+cc_library(
+  name = "example-1.1",
+  srcs = ["example-1.1.cpp"],
+  deps = ["//:spirv-headers"],
+)

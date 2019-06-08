@@ -1,0 +1,10 @@
+package(default_visibility = ["//visibility:public"])
+
+cc_library(
+    name = "spirv-headers",
+    strip_include_prefix = "include",
+    hdrs = glob([
+      "include/spirv/**/*.h",
+      "include/spirv/**/*.hpp",
+    ])
+)
